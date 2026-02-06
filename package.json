@@ -10,14 +10,15 @@
     "react-helmet": "^6.1.0",
     "dangerous-html": "0.1.13",
     "@teleporthq/react-components": "latest",
-    "next": "^12.1.10"
+    "next": "^12.1.10",
+    "serve": "^14.2.0"   // <-- moved here from devDependencies
   },
   "scripts": {
-  "start": "serve -s build -l $PORT",
-  "build": "craco build",
-  "test": "craco test --env=jsdom",
-  "eject": "craco eject"
-},
+    "start": "serve -s build -l $PORT",
+    "build": "craco build",
+    "test": "craco test --env=jsdom",
+    "eject": "craco eject"
+  },
   "engines": {
     "node": ">=18.x"
   },
